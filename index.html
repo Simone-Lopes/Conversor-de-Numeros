@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--original saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversão de Números</title>
+
+        <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+        <center>
+                <h1 id="titulo">Converting Machine</h1>
+
+                <br>
+
+                <br><br>
+
+                <!-- Decimal -->
+                <div id="org_form"><br>
+                        <h3>Escolha um número decimal</h3>
+                        <input id="demo1" type="text" placeholder="Digite o valor em decimal">
+                        <br><br>
+                        <button id="button" onclick="converter()">Converter</button>
+                        <br><br><br>
+                </div>
+                <br>
+
+                <!-- Octal -->
+                <div id="org">
+                        <h3>Selecione as conversões desejadas:</h3>
+                        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+                        <div id="demo2"></div>
+                        <br>
+
+                        <!-- Hexadecimal -->
+                        <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+                        <div id="demo3"></div>
+                        <br>
+
+                        <!-- Binário -->
+                        <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+                        <br>
+                        <div id="demo4"></div>
+                        <br><br>
+                </div>
+                <br><br> <br>
+
+                <button id="btnContato" onclick="tabela()">Tabela de conversão </button>
+
+
+
+                <audio autoplay="autoplay" controls="controls">
+                        <source src="DOCS/music.mp3" type="audio/mp3" />
+                </audio>
+
+                <button id="btnContato" onclick="contato()">Entre em contato conosco! </button>
+
+                <div id="resultado"></div>
+
+                <br><br>
+                <br><br>
+
+        </center>
+</body>
+
+<script>
+        function converter() {
+
+                var decimal = Number(demo1.value);
+                let octal = decimal.toString(8);
+                let hexadecimal = decimal.toString(16);
+                let binaria = decimal.toString(2);
+
+                console.log(decimal);
+                console.log(octal);
+                console.log(hexadecimal);
+                console.log(binaria);
+
+                document.getElementById("demo1").innerHTML = ` ${decimal}`;
+                document.getElementById("demo2").innerHTML = ` ${octal}`;
+                document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
+                document.getElementById("demo4").innerHTML = ` ${binaria}`;
+
+                if (decimal > 1000000000) {
+                        alert("Esse valor pode ter uma difícil visualização!")
+                }
+
+
+        }
+
+        function aparecer_bin() {
+                demo4.style.display = 'block'
+        }
+
+        function aparecer_hexa() {
+                demo3.style.display = 'block'
+        }
+
+        function aparecer_octal() {
+                demo2.style.display = 'block'
+        }
+
+        function contato() {
+                resultado.innerHTML = '<h2>Rita de Cássia</h2> <b>RA:</b> 03231044<br> <b>email:</b> rita.barbosa@sptech.school<br><br> <h2>Simone Lopes</h2> <b>RA:</b> 03231049<br> <b>email:</b> simone.santos@sptech.school'
+        }
+        function tabela() {
+                resultado.innerHTML = '<img src="DOCS/hexa_02.jpg" alt="">'
+        }
+
+</script>
+</body>
+
+</html>

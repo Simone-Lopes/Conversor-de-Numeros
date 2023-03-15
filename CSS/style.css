@@ -1,0 +1,122 @@
+body,
+html {
+    height: auto;
+    width: auto;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #ff8fec, #2c0049);
+    height: auto;
+    width: auto;
+}
+
+#demo2 {
+    display: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    background-color: #4c0f75;
+    border-radius: 15px;
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+#demo3 {
+    display: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    background-color: #4c0f75;
+    border-radius: 15px;
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+#demo4 {
+    display: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    background-color: #4c0f75;
+    border-radius: 15px;
+    margin: 15px;
+    text-transform: uppercase;
+
+}
+
+#titulo {
+    font-family: fantasy;
+    color: white;
+    letter-spacing: 1px;
+    font: italic 2.9em "Fira Sans", sans-serif;
+}
+
+#org_form {
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: auto;
+
+}
+
+#org {
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: inline-block;
+    width: 500px;
+    height: auto;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #4c0f75;
+    margin: 20px;
+}
+
+#button {
+    margin: 10px;
+    background-color: #4c0f75;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border: none;
+}
+
+
+h3 {
+    margin: 20px;
+    color: rgb(44, 44, 44);
+}
+
+#resultado {
+    color: white;
+}
+
+
+#btnContato {
+    margin: 50px;
+    background-color: #4c0f75;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    width: 250px;
+    height: 25px;
+    border: none;
+}
