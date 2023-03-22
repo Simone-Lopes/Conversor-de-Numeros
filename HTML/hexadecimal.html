@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--original saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversão de Números</title>
+
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="icon" type="image/png" href="../DOCS/icon.png"/>
+
+</head>
+
+<body>
+    <nav id="menu">
+        <ul>
+        <span id="logo">Converting Machine</span>
+            <li><a href="index.html" >Decimal</a></li>
+            <li><a href="binario.html">Binário</a></li>
+            <li><a href="octal.html">Octal</a></li>
+            <li><a href="hexadecimal.html"style="background-color: #ff8fec;">Hexadecimal</a></li>
+            <li><a href="contato.html">Sobre nós</a></li>
+        </ul>
+    </nav>
+
+            <div id="decimal">
+
+        <center>
+                <br><br>
+                <h1 id="titulo">Conversão de Hexadecimal</h1>
+                <!-- Hexadecimal -->
+                <div id="org_form"><br>
+                        <h3>Digite um número Hexadecimal</h3>
+                        <input id="demo1" type="text" placeholder="Digite o valor em hexadecimal">
+                        <br><br>
+                        <button id="button" onclick="converter()">Converter</button>
+                        <br><br><br>
+                </div>
+                <br>
+
+                <!-- Octal -->
+                <div id="org">
+                        <h3>Selecione as conversões desejadas:</h3>
+                        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+                        <div id="demo2"></div>
+                        <br>
+
+                        <!-- Binário -->
+                        <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+                        <div id="demo3"></div>
+                        <br>
+
+                        <!-- Decimal -->
+                        <input onclick="aparecer_dec()" type="checkbox"><b>Decimal</b>
+                        <br>
+                        <div id="demo4"></div>
+                        <br><br>
+                </div>
+                <br><br> <br>
+
+                <button id="btnContato" onclick="tabela()">Tabela de conversão </button>
+
+                <br>
+
+                <audio autoplay="autoplay" controls="controls">
+                        <source src="../DOCS/music.mp3" type="audio/mp3" />
+                </audio>
+
+                <div id="resultado"></div>
+
+                <br><br>
+                <br><br>
+
+        </center></div>
+</body>
+
+<script>
+        function converter() {
+
+                var hexadecimal = (demo1.value);
+                hexadecimal = parseInt(hexadecimal,16);
+
+                let octal = hexadecimal.toString(8);
+                let binario = hexadecimal.toString(2);
+                let decimal = hexadecimal.toString(10);
+
+                console.log(octal);
+                console.log(hexadecimal);
+                console.log(binario);
+                console.log(decimal);
+
+                document.getElementById("demo1").innerHTML = ` ${hexadecimal}`;
+                document.getElementById("demo2").innerHTML = ` ${octal}`;
+                document.getElementById("demo3").innerHTML = ` ${binario}`;
+                document.getElementById("demo4").innerHTML = ` ${decimal}`;
+
+        }
+
+        function aparecer_dec() {
+                demo4.style.display = 'block'
+        }
+
+        function aparecer_bin() {
+                demo3.style.display = 'block'
+        }
+
+        function aparecer_octal() {
+                demo2.style.display = 'block'
+        }
+
+        function tabela() {
+                resultado.innerHTML = '<img src="DOCS/hexa_02.jpg" alt="">'
+        }
+
+
+</script>
+</body>
+
+</html>
