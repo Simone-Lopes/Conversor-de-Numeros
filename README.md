@@ -1,7 +1,7 @@
 # Conversor de Números 👩‍💻
 
 ## Descrição...
-Conversor de decimal para binário, octal e hexadecimal. Feito para a aula de Arquitetura Computacional!
+Conversor números decimal, binário, octal e hexadecimal. Feito para a aula de Arquitetura Computacional!
 
 ## Linguagens usadas...
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
